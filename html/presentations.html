@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Normalize a web page -->
-<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen">
+      <link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen">
     <!-- Title and logo -->
-    <link href='images/logo.png' rel='shortcut icon' type='image/png'>
+    <link href='../images/logo.png' rel='shortcut icon' type='image/png'>
     <title>EnergyPAZ s.a.s</title>
 
     <!-- Bootstrap core CSS -->
@@ -60,8 +60,8 @@
             <div style="height: 1px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="../index.html">Home</a></li>
-                <li class="active"><a href="#about">About</a></li>
-                <li><a href="../html/presentations.html">Presentations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="">Presentations</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -92,46 +92,38 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140" width="140">
-          <h3>Laura Mercedes Coronado Múnera</h3>
-          <h4>Estudiante de ingeniería industrial</h4>
-          <h5>lmcoronadom@unal.edu.co</h5>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140" width="140">
-          <h3>Andres Esteban Espinosa Osorio</h3>
-          <h4>Estudiante de ingeniería de sistemas e informática</h4>
-          <h5>aeespinosao@unal.edu.co</h5>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140" width="140">
-          <h3>Julián Camilo Granados Pérez</h3>
-          <h4>Estudiante de ingeniería de petróleos</h4>
-          <h5>jcgranadosp@unal.edu.co</h5>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140" width="140">
-          <h3>Jhonatan David Restrepo Reyes</h3>
-          <h4>Estudiante de ingeniería mecánica</h4>
-          <h5>jhdrestrepore@unal.edu.co</h5>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140" width="140">
-          <h3>Andrea Carolina Sánchez Valdés </h3>
-          <h4>Estudiante de ingeniería administrativa</h4>
-          <h5>ancsanchezva@unal.edu.co</h5>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" height="140" width="140">
-          <h3>Sebastian Velasquez Morales	</h3>
-          <h4>Estudiante de ingeniería eléctrica</h4>
-          <h5>sevelasquezmo@unal.edu.co</h5>
-        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-12">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                      Presentación 1
+                  </h4>
+                </div>
+                 </a>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="100%" height="550" src="../documents/presentacion1.pdf"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                      Presentación 2
+                  </h4>
+                </div>
+                </a>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <!-- Content of panel -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div><!-- /.col-lg-12 -->
       </div><!-- /.row -->
 
 
@@ -159,7 +151,9 @@
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  
+    <script>
+        $('.collapse').collapse()  
+    </script>
 
     <svg style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;" preserveAspectRatio="none" viewBox="0 0 500 500" height="500" width="500" xmlns="http://www.w3.org/2000/svg"><defs><style type="text/css"></style></defs><text style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif" y="25" x="0">500x500</text></svg>
   </body>
