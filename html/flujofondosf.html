@@ -44,6 +44,18 @@
         {   
          text-decoration:none;   
         }   
+        .fraction {
+            display: inline-block;
+            vertical-align: middle; 
+            margin: 0 0.2em 0.4ex;
+            text-align: center;
+        }
+        .fraction > span {
+            display: block;
+            padding-top: 0.15em;
+        }
+        .fraction span.fdn {border-top: thin solid black;}
+        .fraction span.bar {display: none;}
     </style>
   </head>
 <!-- NAVBAR
@@ -67,7 +79,7 @@
               <ul class="nav navbar-nav">
                 <li><a href="../index.html"> <i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
                 <li><a href="about.html"> <i class="fa fa-users" aria-hidden="true"></i> Integrantes</a></li>
-                <li><a href="presentations.html"> <i class="fa fa-television" aria-hidden="true"></i> Presentaciones </a></li>
+                <li><a href="presentations.html"> <i class="fa fa-television" aria-hidden="true"></i> Poster & presentaciones </a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-list" aria-hidden="true"></i> Formulación <span class="caret"></span></a>
@@ -112,9 +124,35 @@
 
       
       <!-- START THE FEATURETTES -->
-
-   
-       <div class="row featurette" style="padding-top:100px;">
+    <div class="row featurette" style="padding-top:100px;">
+        <div class="col-sm-10">
+            <h3><b>Datos generales</b></h3>
+            <br>
+            <div class="table-responsive  col-sm-offset-3">
+              <table class="table table-bordered" style="font-size:20px;font-color:black;">
+              
+                <thead>
+                  <tr class="active">
+                    <th style="text-align:center">Impuesto renta</th>
+                    <th style="text-align:center">Valor K<sub>wh</sub> año 1</th>
+                    <th style="text-align:center">TASA EA</th>
+                    <th style="text-align:center">BANCOLDEX</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">25%</th>
+                    <td style="text-align:center">$ 670,00</td>
+                    <td style="text-align:center">15%</td>
+                    <td style="text-align:center">80% DE LA DEUDA<b>[1]</b></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+       <div class="row featurette" style="">
         <div class="col-sm-12">
             <h3><b>Tabla de amortización</b></h3>
             <br>
@@ -177,7 +215,7 @@
             </div>
         </div>
       </div><!-- /.row -->
-    
+     <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-sm-12">
            <h3><b>Flujo de fondos</b></h3>
@@ -454,18 +492,110 @@
         </div>
       </div><!-- /.row -->
       
-      
+      <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-sm-10 col-md-offset-1" >
             <div id="grafica2" style="margin:0px; font-size: 100px;"></div>
         </div>
       </div><!-- /.row -->
+     
+      <hr class="featurette-divider">
+     
+     <div class="row featurette">
+           <h2><b>Calculo del valor presente neto</b></h2><br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/vpn.jpg" alt="">
+      <div class="eq-c" style="font-size:20px;"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>VPN </i> = $1.366.554.899,66
+    </div>
+      <br><br>
+           <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FNE<sub>i</sub> : Fujo de fondos neto en el preiodo i<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P : Inversión <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i : Interés<br></p>
+        
+            <hr class="featurette-divider">
 
+      <h2><b>Calculo de la tasa interna de retorno</b></h2><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/tir.svg" alt="">
+      <div class="eq-c" style="font-size:20px;"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>TIR </i> = 52,58%
+    </div>
+      <br><br>
+        <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F<sub>i</sub> : El flujo de fondos en el periodo i<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n : El número de periodos <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I : La inversión inicial<br></p>
+       <hr class="featurette-divider">
+        <h2><b>Calculo de costo promedio de capital</b></h2>
+        <br>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Costo del Beta apalancado</h3><br><br>
+        <div class="eq-c" style="font-size:20px;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;<sub>l</sub></i> = (1 + (1 - T)*
+              <div class="fraction">
+                  <span class="fup"><i>D</i></span>
+                  <span class="bar">/</span>
+                  <span class="fdn"><i>E</i></span>
+              </div>) * &beta;<sub>u</sub>
+        </div><br>
+        <div class="eq-c" style="font-size:20px;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;<sub>l</sub></i> = 3,13
+        </div>
+        <br><br>
+        <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T : Impuesto de renta = 15%<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D : Deuda = $1.926.244.828,80 <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E : Patrimonio = $1.487.651.060,00<br></p>
+        <br>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Costo del patrimonio</h3><br><br>
+        <div class="eq-c" style="font-size:20px;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>K<sub>e</sub> (R)</i> = R<sub>f</sub> + (R<sub>m</sub> - R<sub>f</sub>) * &beta;<sub>l</sub> + R<sub>p</sub>
+        </div><br>
+        <div class="eq-c" style="font-size:20px;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>K<sub>e</sub> (R)</i> = 12,28%
+        </div>
+        <br><br>
+        <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R<sub>f</sub> : Rentabilidad libre del mercado(%) = 1,75% <b>[2]</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R<sub>m</sub> : Rentabilidad del mercado(%) = 4,39%<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R<sub>p</sub> : Riesgo país = 2,26% <b>[3]</b><br></p>
+         <br>
+         <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculos del WACC</h3><br><br>
+        <div class="eq-c" style="font-size:20px;">
+        <div class="eq-c" style="font-size:20px;">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>WACC</i> = K<sub>e</sub> * 
+              <div class="fraction">
+                  <span class="fup"><i>E</i></span>
+                  <span class="bar">/</span>
+                  <span class="fdn"><i>E + D</i></span>
+              </div>
+              + K<sub>d</sub> *
+              <div class="fraction">
+                  <span class="fup"><i>D</i></span>
+                  <span class="bar">/</span>
+                  <span class="fdn"><i>E + D</i></span>
+              </div>
+              * (1 - T)
+          </div>
+          <br>
+          <div class="eq-c" style="font-size:20px;">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WACC = 2,92%
+          </div>
+          <br><br>
+          <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K<sub>d</sub> : Costo de la deuda = 6% <br></p>
+     </div>
+      <!-- /END THE FEATURETTES -->
       <hr class="featurette-divider">
 
-      <!-- /END THE FEATURETTES -->
+      <div class="row">
+        <div class="col-sm-10 col-md-offset-1" >
+            <h2><b>Referencias:</b></h2>
+            <p><b>[1]</b> Grupo Bancolombia. [Online] Available: http://www.grupobancolombia.com/wps/portal/personas/productos-servicios/creditos/cartera-comercial/bancoldex/<br>
+                <b>[2]</b> [Online] Available: http://es.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data<br>
+                <b>[3]</b> [Online] Available: http://www.ambito.com/economia/mercados/riesgo-pais/info/?id=4%20Miercoles%2019%20de%20oct<br>
+                </p>
+        </div>
+      </div>
 
-
+<hr class="featurette-divider">
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>

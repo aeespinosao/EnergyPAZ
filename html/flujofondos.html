@@ -44,6 +44,18 @@
         {   
          text-decoration:none;   
         }   
+        .fraction {
+            display: inline-block;
+            vertical-align: middle; 
+            margin: 0 0.2em 0.4ex;
+            text-align: center;
+        }
+        .fraction > span {
+            display: block;
+            padding-top: 0.15em;
+        }
+        .fraction span.fdn {border-top: thin solid black;}
+        .fraction span.bar {display: none;}
     </style>
   </head>
 <!-- NAVBAR
@@ -67,7 +79,7 @@
               <ul class="nav navbar-nav">
                 <li><a href="../index.html"> <i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
                 <li><a href="about.html"> <i class="fa fa-users" aria-hidden="true"></i> Integrantes</a></li>
-                <li><a href="presentations.html"> <i class="fa fa-television" aria-hidden="true"></i> Presentaciones </a></li>
+                <li><a href="presentations.html"> <i class="fa fa-television" aria-hidden="true"></i> Poster & presentaciones </a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-list" aria-hidden="true"></i> Formulación <span class="caret"></span></a>
@@ -113,11 +125,34 @@
       
       <!-- START THE FEATURETTES -->
 
-   
+       <div class="row featurette" style="padding-top:100px;">
+        <div class="col-sm-10">
+            <h3><b>Datos generales</b></h3>
+            <br>
+            <div class="table-responsive  col-sm-offset-3">
+              <table class="table table-bordered" style="font-size:20px;font-color:black;">
+              
+                <thead>
+                  <tr class="active">
+                    <th style="text-align:center">Impuesto renta</th>
+                    <th style="text-align:center">Valor K<sub>wh</sub> año 1</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">25%</th>
+                    <td style="text-align:center">$ 670,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
        
     
       <div class="row featurette">
-        <div class="col-sm-12" style="padding-top:100px;">
+        <div class="col-sm-12" >
            <h3><b>Flujo de fondos</b></h3>
             <br>
             <div class="table-responsive">
@@ -390,7 +425,8 @@
             </div>
         </div>
       </div><!-- /.row -->
-      
+           <hr class="featurette-divider">
+
       
       <div class="row featurette">
         <div class="col-sm-10 col-md-offset-1" >
@@ -398,8 +434,32 @@
         </div>
       </div><!-- /.row -->
 
-      <hr class="featurette-divider">
 
+     <hr class="featurette-divider">
+     
+     <div class="row featurette">
+           <h2><b>Calculo del valor presente neto</b></h2><br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/vpn.jpg" alt="">
+      <div class="eq-c" style="font-size:20px;"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>VPN </i> = $ -889.670.953,63
+    </div>
+      <br><br>
+           <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FNE<sub>i</sub> : Fujo de fondos neto en el preiodo i<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P : Inversión <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i : Interés<br></p>
+        
+            <hr class="featurette-divider">
+
+      <h2><b>Calculo de la tasa interna de retorno</b></h2><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/tir.svg" alt="">
+      <div class="eq-c" style="font-size:20px;"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>TIR </i> = -11,40%
+    </div>
+      <br><br>
+        <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F<sub>i</sub> : El flujo de caja en el periodo i<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n : El número de periodos <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I : La inversión inicial<br></p>
+       <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
 
 
