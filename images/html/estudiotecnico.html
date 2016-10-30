@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Normalize a web page -->
+<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen">
+    <!-- Title and logo -->
+    <link href='../images/logo.png' rel='shortcut icon' type='image/png'>
+    <title>EnergyPAZ s.a.s</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+    <style type="text/css">   
+        a:link   
+        {   
+         text-decoration:none;   
+        }   
+        .fraction {
+            display: inline-block;
+            vertical-align: middle; 
+            margin: 0 0.2em 0.4ex;
+            text-align: center;
+        }
+        .fraction > span {
+            display: block;
+            padding-top: 0.15em;
+        }
+        .fraction span.fdn {border-top: thin solid black;}
+        .fraction span.bar {display: none;}
+    </style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html"><i class="fa fa-bolt" style=" color: #FFFF00; margin-right:10px;" aria-hidden="true"></i>EnergyPAZ</a>
+            </div>
+            <div style="height: 1px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html"> <i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
+                <li><a href="about.html"> <i class="fa fa-users" aria-hidden="true"></i> Integrantes</a></li>
+                <li><a href="presentations.html"> <i class="fa fa-television" aria-hidden="true"></i> Poster & presentaciones </a></li>
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list" aria-hidden="true"></i> Formulación <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="marcolegal.html">Estudio legal</a></li>
+                    <li><a href="estudioambiental.html">Estudio ambiental</a></li>
+                    <li><a href="estudioorganizacional.html">Estudio organizacional</a></li>
+                    <li class="active"><a href="estudiotecnico.html">Estudio técnico</a></li>
+                    <li><a href="metodosalt.html">Metodos alternativos</a></li>
+                    <li><a href="estudiomercado.html">Estudio de mercado</a></li>
+                    <li><a href="estructuracostos.html">Estructura de costos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-line-chart" aria-hidden="true"></i> Evaluación financiera <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                    <li><a href="flujofondos.html">Flujo de fondos puro</a></li>
+                    <li><a href="flujofondosf.html">Flujo de fondos financiado</a></li>
+                                         <li><a href="resumen.html">Resumen</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="maqueta.html"> <i class="fa fa-clipboard" aria-hidden="true"></i> Maqueta </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+     
+      <!-- Three columns of text below the carousel -->
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <h1 class="featurette-heading">Estudio técnico.<!--<span class="text-muted">Checkmate.</span>--></h1><br>
+            <h2><b>Estimación de consumo.</b></h2><br>
+            <p class="lead">Si se dispone de información acerca del número y régimen de funcionamiento de los aparatos eléctricos que va a disponer habitualmente la vivienda, se podría obtener una estimación del consumo energético muy aproximado, mediante el producto de las potencias nominales de cada aparato por las horas de funcionamiento previstas de cada uno de ellos, y posteriormente realizando su suma. Es importante incrementar el resultado en al menos un 30% adicional como coeficiente de seguridad, con objeto de tener en cuenta también los picos de potencia que se producen en los arranques de algunos aparatos eléctricos.</p>
+        </div>
+      </div><!-- /.row -->
+      <br>
+      <!-- Three columns of text below the carousel -->
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th colspan="8" scope="col" style="text-align:center" class="active">Casa propotipo</th>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center">Electrodoméstico</th>
+                    <th style="text-align:center">Marca</th>
+                    <th style="text-align:center">Referencia</th>
+                    <th style="text-align:center">Cantidad</th>
+                    <th style="text-align:center">Potencia [W]</th>
+                    <th style="text-align:center">Tiempo de uso al día [h]</th>
+                    <th style="text-align:center">Potencia [KWh/día]</th>
+                    <th style="text-align:center">Potencia con <br>factor de seguridad del 30%[KWh/día]</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Bombillo ahorrador	</td>
+                    <td style="text-align:center">Philips</td>
+                      <td style="text-align:center">10w</td>
+                      <td style="text-align:center">6</td>
+                      <td style="text-align:center">10</td>
+                      <td style="text-align:center">8</td>	<td style="text-align:center">0,480</td>	<td style="text-align:center">0,624</td>
+
+                  </tr>
+                  <tr>
+                      <td style="text-align:center">Nevera</td>
+                      <td style="text-align:center">Haceb</td>
+                      <td style="text-align:center">222L SE 2P DA BL</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">-</td>
+                      <td style="text-align:center">-</td>
+                      <td style="text-align:center">1,098</td>
+                      <td style="text-align:center">1,428</td>
+
+                  </tr>
+                  <tr>
+                      <td style="text-align:center">Microondas</td>
+                      <td style="text-align:center">Haceb</td>
+                      <td style="text-align:center">AR HM-0.7 ME BL</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">600</td>
+                      <td style="text-align:center">0,5</td>
+                      <td style="text-align:center">0,300</td>
+                      <td style="text-align:center">0,390</td>
+
+                  </tr>
+                  <tr>
+                      <td style="text-align:center">T.V</td>
+                      <td style="text-align:center">LG</td>
+                      <td style="text-align:center">42ls3400</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">70</td>
+                      <td style="text-align:center">10</td>
+                      <td style="text-align:center">0,700</td>
+                      <td style="text-align:center">0,910</td>
+
+                  </tr>
+                  <tr>
+                      <td style="text-align:center">Lavadora</td>
+                      <td style="text-align:center">Samsung</td>
+                      <td style="text-align:center">wd11j6</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">-</td>
+                      <td style="text-align:center">-</td>
+                      <td style="text-align:center">0,427</td>
+                      <td style="text-align:center">0,556</td>
+
+                  </tr>
+                  <tr>
+                      <td style="text-align:center">Radio</td>
+                      <td style="text-align:center">Panasonic</td>
+                      <td style="text-align:center">15</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">15</td>
+                      <td style="text-align:center">3</td>
+                      <td style="text-align:center">0,045</td>
+                      <td style="text-align:center">0,059</td>
+
+                  </tr>
+                  <tr>
+                      <td style="text-align:center">Licuadora</td>
+                      <td style="text-align:center">Haceb</td>
+                      <td style="text-align:center">AS 1.5LV-5VP INOX</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">700</td>
+                      <td style="text-align:center">0,1</td>
+                      <td style="text-align:center">0,070</td>
+                      <td style="text-align:center">0,091</td>
+
+                  </tr>
+                  <tr>
+                      <td style="text-align:center">Plancha</td>
+                      <td style="text-align:center">Philips</td>
+                      <td style="text-align:center">gc2520/02</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">900</td>
+                      <td style="text-align:center">0,1</td>
+                      <td style="text-align:center">0,090</td>
+                      <td style="text-align:center">0,117</td>
+
+                  </tr>
+                  <tr>
+                      <td style="text-align:center">Cafetera</td>
+                      <td style="text-align:center">Haceb</td>
+                      <td style="text-align:center">AS 1OTV NE</td>
+                      <td style="text-align:center">1</td>
+                      <td style="text-align:center">900</td>
+                      <td style="text-align:center">0,1</td>
+                      <td style="text-align:center">0,090</td>
+                      <td style="text-align:center">0,117</td>
+
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Electrodomésticos menores</td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center"></td>
+                    <td style="text-align:center">0,200</td>
+                    <td style="text-align:center">0,260</td>
+                    
+                  </tr>
+                  <tr>
+                      <th colspan="6" scope="col" style="text-align:center" class="warning">Total</th>
+                      <th class="warning" style="text-align:center">3,500</th>
+                      <th class="warning" style="text-align:center">4,551</th>
+                  </tr>
+                  <tr>
+                      <th colspan="7" scope="col" style="text-align:center" class="success">Total incluyendo eficiencia</th>
+                      <th class="success" style="text-align:center">5,308</th>
+                  </tr>
+                </tbody>
+              </table>
+              <em>Tabla 1: Elaboración propia</em>
+            </div>
+        </div>
+      </div><!-- /.row -->
+      <br><br>
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th colspan="2" scope="col" style="text-align:center" class="active">Eficiencia</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Regulador</td>
+                    <td style="text-align:center">0,95</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Batería</td>
+                    <td style="text-align:center">0,94</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Inversor</td>
+                    <td style="text-align:center">0,96</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Combinada</td>
+                    <td style="text-align:center">0,86</td>
+                  </tr>
+                </tbody>
+              </table>
+              <em>Tabla 2: Elaboración propia</em>
+            </div>
+        </div>
+      </div><!-- /.row -->
+      
+      <hr class="featurette-divider">
+      
+      <!-- Three columns of text below the carousel -->
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <h2><b>Radiación solar.</b></h2><br>
+            <p class="lead">El conocimiento de la radiación solar que se produce en el lugar donde se va a realizar la instalación es determinante, tanto para conocer la energía disponible, como para analizar el comportamiento de los componentes del sistema.</p>
+        </div>
+      </div><!-- /.row -->
+      
+      <!-- Three columns of text below the carousel -->
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th colspan="4" scope="col" style="text-align:center" class="active">Municipio de dabeiba</th>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center">Mes</th>
+                    <th style="text-align:center">Radiación solar [KWh/m<sup>2</sup>]</th>
+                    <th style="text-align:center">Radiación solar promedio [KWh/m<sup>2</sup>]</th>
+                    <th style="text-align:center">Velocidad del viento [m/s]]</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Enero</td>
+                    <td style="text-align:center">4 - 4.5</td>
+                    <td style="text-align:center">4,25</td>
+                    <td style="text-align:center">2,5 - 3,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Febrero</td>
+                    <td style="text-align:center">4 - 4.5</td>
+                    <td style="text-align:center">4,25</td>
+                    <td style="text-align:center">3,0 - 6,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Marzo</td>
+                    <td style="text-align:center">4,5 - 5,0</td>
+                    <td style="text-align:center">4,75</td>
+                    <td style="text-align:center">3,0 - 5,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Abril</td>
+                    <td style="text-align:center">3,5 - 4,0</td>
+                    <td style="text-align:center">3,75</td>
+                    <td style="text-align:center">3,5 - 4,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Mayo</td>
+                    <td style="text-align:center">3,5 - 4,0</td>
+                    <td style="text-align:center">3,75</td>
+                    <td style="text-align:center">1,5 - 2,5<td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Junio</td>
+                    <td style="text-align:center">3,5 - 4,5</td>
+                    <td style="text-align:center">4,00</td>
+                    <td style="text-align:center">2,5 - 3,0<td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Julio</td>
+                    <td style="text-align:center">4,5 - 5,0</td>
+                    <td style="text-align:center">4,75</td>
+                    <td style="text-align:center">1,5 - 3,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Agosto</td>
+                    <td style="text-align:center">4,0 - 4,5</td>
+                    <td style="text-align:center">4,25</td>
+                    <td style="text-align:center">1,5 - 3,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Septiembre</td>
+                    <td style="text-align:center">4,0 - 4,5</td>
+                    <td style="text-align:center">4,25</td>
+                    <td style="text-align:center">0,5 - 2,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Octubre</td>
+                    <td style="text-align:center">3,5 - 4,0</td>
+                    <td style="text-align:center">3,75</td>
+                    <td style="text-align:center">0,5 - 2,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Noviembre</td>
+                    <td style="text-align:center">3,5 - 4,0</td>
+                    <td style="text-align:center">3,75</td>
+                    <td style="text-align:center">2,5 - 3,5</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Diciembre</td>
+                    <td style="text-align:center">3,5 - 4,0</td>
+                    <td style="text-align:center">3,75</td>
+                    <td style="text-align:center">3,5 - 5,0</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center" class="success" colspan="2" scope="col">Radiación solar promedio anual [KWh/m<sup>2</sup>]</td>
+                    <td style="text-align:center" class="success">4,10</td>
+                    <td class="success"></td>
+                    <td class="success"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <em>Tabla 3: Elaboración propia</em>
+            </div>
+        </div>
+      </div><!-- /.row -->
+      <br><br>
+      
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <div id="grafica2" style="margin:0px; font-size: 100px;"></div>
+        </div>
+      </div><!-- /.row -->
+      
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <p class="lead">Para el cálculo del número de paneles solares necesarios para satisfacer la demanda eléctrica prevista en la vivienda, se empleará la expresión siguiente en función del emplazamiento y tipo de panel solar que se vaya a instalar:</p>
+            <br>
+            <div class="eq-c" style="font-size:20px;">
+                <i>N<sub>mod</sub></i> = 
+                <div class="fraction">
+                    <span class="fup"><i>C<sub>ed</sub></i></span>
+                    <span class="bar">/</span>
+                    <span class="fdn"><i>P<sub>MP</sub> * HSP<sub>crit</sub> * PR</i></span>
+                </div>
+            </div>
+            <br>
+            <p class="lead">Siendo: <br>
+                <ul>
+                    <li><p class="lead">C<sub>ed</sub>: el consumo diario estimado, de valor 5,308 kW·h.</p></li>
+                    <li><p class="lead">P<sub>MP</sub>: la potencia pico del módulo ISF-255 seleccionado en condiciones estándar de medida (CEM), de valor 255 W.</p></li>
+                    <li><p class="lead">HSP<sub>crit</sub>: es el valor de las horas de sol pico del mes crítico (en este caso diciembre), de valor 4,56 HSP.</p></li>
+                    <li><p class="lead">PR: es el "Performance Ratio" de la instalación o rendimiento energético de la instalación, definido como la eficiencia de la instalación en condiciones reales de trabajo, donde se tienen en cuenta las siguientes pérdidas originadas:</p>
+                    <ul>
+                        <li><p class="lead">Pérdidas por dispersión de potencia de los módulos: Aproximadamente 3% por fabricante.</p>
+                        <ul>
+                            <li><p class="lead">La potencia que pueden desarrollar los módulos no es exactamente la misma, y por lo tanto tampoco lo son su intensidad ni su tensión de máxima potencia. De este modo, cuando se constituye un sistema generador formado por varios paneles o módulos conectados en serie, este hecho induce a que se produzca una pérdida de potencia debido a que el valor de la intensidad de corriente de paso será igual a la de menor valor de los paneles colocados en serie.</p>
+                            <p class="lead">Para minimizar este efecto, los módulos se clasifican por su intensidad, que suele venir indicado con una letra grabada mediante un adhesivo adherido al marco de un panel, de manera que se puede escoger los paneles similares a la hora de armar las series durante la instalación.</p>
+                            <p class="lead">En esta ocasión, y según se puede consultar en el catálogo de propiedades técnicas suministrado por el fabricante de los módulos fotovoltaicos seleccionados, la tolerancia de potencia (% P<sub>máx</sub>) del módulo seleccionado es de 0%+3%, por lo que las posibles pérdidas por dispersión de potencia se pueden estimar en un 3%.</p></li>
+                        </ul>
+                        </li>
+                        <li><p class="lead">Pérdidas por incremento de temperatura de las células fotovoltaicas.</p>
+                        <ul>
+                            <li><p class="lead">El rendimiento de los módulos fotovoltaicos disminuye con el incremento de la temperatura a la que se encuentra la superficie del panel. Al ser un elemento expuesto a la radiación solar de manera continua es necesario que exista una buena ventilación tanto por la superficie expuesta al sol como por la parte posterior de los módulos. No obstante, incluso con buena ventilación, se produce un incremento de temperatura de la superficie de los módulos con respecto a la temperatura ambiente exterior.</p>
+                            <p class="lead">Para el cálculo del factor que considera las pérdidas por incremento de la temperatura del panel (P<sub>T</sub>), se suele emplear la siguiente expresión:</p>
+                            <div class="eq-c" style="font-size:20px;">
+                                <i>P<sub>T</sub></i> = 
+                                <div class="fraction">
+                                    <span class="fup"><i>K<sub>T</sub> * (T<sub>c</sub> - 25°C)</i></span>
+                                </div>
+                            </div>
+                            <p class="lead"><em>Siendo: <br>
+                            K<sub>T</sub>: el coeficiente de temperatura, medido en ºC<sup>-1</sup>.<br>
+                            ºC<sup>-1</sup>: En este caso, se puede extraer del catálogo del fabricante que contiene la información técnica de la placa, siendo K<sub>T</sub> = 0,0044 ºC<sup>-1</sup><br>
+                            T<sub>c</sub>: es la temperatura media mensual a la que trabajan las placas fotovoltaicas. Para calcular esta temperatura, Tc, se suele emplear la siguiente expresión:<br></em></p>
+                            <div class="eq-c" style="font-size:20px;">
+                                <i>T<sub>c</sub></i> = T<sub>amb</sub> +
+                                <div class="fraction">
+                                    <span class="fup"><i>(T<sub>onc</sub> - 20°C) * E</i></span>
+                                    <span class="bar">/</span>
+                                    <span class="fdn"><i>800</i></span>
+                                </div>
+                            </div>
+                            <p class="lead">
+                                Siendo:<br>
+                                T<sub>amb</sub>:  La temperatura ambiente media mensual del lugar donde se instalarán los módulos fotovoltaicos. La temperatura media para el mes de diciembre es de 11,1ºC.<br>
+                                T<sub>onc</sub>:  Es la temperatura de operación nominal de la célula. Este dato también es suministrado por el fabricante del módulo solar, siendo el valor en este caso Tonc = 45ºC.<br>
+                                E:  Es la radiación media en un día soleado del mes en cuestión, que en este caso es de valor 590 W/m2.<br>
+                                Sustituyendo los valores en la expresión anterior, resulta que la temperatura media mensual (T<sub>c</sub>) a la que trabajan las placas fotovoltaicas, resulta ser de: <br><br>
+                                Tc = 11,1 + 18,4 = 29,5 ºC<br><br>                          
+                                Por lo que el factor que considera las pérdidas por incremento de la temperatura del panel (P<sub>T</sub>) resulta ser:<br><br>
+                                P<sub>T</sub> = K<sub>T</sub> * (T<sub>c</sub> - 25 ºC)= 0,0044 * (29,5 - 25)= 0,019<br><br>
+                                Resultando unas pérdidas por incremento de temperatura de los módulos fotovoltaicos del 1,9%
+                            </p></li>
+                        </ul>
+                        </li>
+                        
+                        <li><p class="lead">Pérdidas debidas a la acumulación de suciedad en los módulos.</p>
+                        <ul>
+                            <li><p class="lead">En unas condiciones normales de emplazamiento y realizando tareas de mantenimiento y limpieza correspondientes de forma regular, los paneles fotovoltaicos no deben superar unas perdidas por este concepto del 3%.</p></li>
+                        </ul>
+                        </li>
+                        <li><p class="lead">Pérdidas por sombras.</p>
+                        <ul>
+                            <li><p class="lead">Las pérdidas por el sombreado parcial de los generadores fotovoltaicos que penalizan su producción eléctrica se pueden estimar en torno al 4%.</p></li>
+                        </ul></li>
+                        <li><p class="lead">Pérdidas por degradación de los módulos.</p>
+                        <ul>
+                            <li><p class="lead">Estas pérdidas se deben a un proceso natural de degradación de todas las células de silicio debido a su exposición a la radiación solar, que de forma usual se admite que sean del orden del 1%.</p></li>
+                        </ul>
+                        </li>
+                        <li><p class="lead">Pérdidas eléctricas.</p>
+                        <ul>
+                            <li><p class="lead">La instalación eléctrica y el conexionado entre módulos, y de éstos con los demás componentes de la instalación fotovoltaica, se deberá realizar según las recomendaciones recogidas en el Pliego de Condiciones Técnicas del IDEA, donde se indica que la caída de tensión no podrá superar el 3% (1,5% para la parte de corriente continua o directa y del 2% para los conductores de la parte de corriente alterna). Por tanto, teniendo en cuenta estas consideraciones, se estiman que las pérdidas eléctricas serán del 3%.</p></li>
+                        </ul>
+                        </li>
+                        <li><p class="lead">Pérdidas por reflectancia.</p>
+                        <ul>
+                            <li><p class="lead">Este tipo de pérdidas, que hacen referencia a los efectos angulares de la reflexión en los módulos, fueron estimadas por la Universidad de Ginebra y deben considerarse en un 2,9%.</p>
+                            <p class="lead">Finalmente, contabilizando todas las pérdidas anteriores, se obtiene el "Performance Ratio" (PR) o rendimiento energético de la instalación, definido como la eficiencia alcanzada en la instalación, y de valor en este caso de:<br><br>
+                            PR = 100% - 3% - 1,9% - 3% - 4% - 1% - 3% - 2,9% = 81,2%<br><br>
+                            Por lo que la expresión anterior del principio de este apartado, que servía para el cálculo del número de paneles solares necesarios, resultará valer lo siguiente:</p>
+                            <br>
+                            <div class="eq-c" style="font-size:20px;">
+                                <i>N<sub>mod</sub></i> = 
+                                <div class="fraction">
+                                    <span class="fup"><i>C<sub>ed</sub></i></span>
+                                    <span class="bar">/</span>
+                                    <span class="fdn"><i>P<sub>MP</sub> * HSP<sub>crit</sub> * PR</i></span>
+                                </div>
+                            </div>
+                           <br>
+                           <p class="lead">
+                               C<sub>ed</sub>(consumo diario estimado)= 11185 W*h<br>
+                               P<sub>MP</sub>(potencia pico del módulo seleccionado)= 255 W<br>
+                               HSP<sub>crít</sub>(horas de sol pico)= 4,56 HSP<br>
+                               PR(performance ratio)= 0,812.<br>
+                               Por lo que para calcular el número de módulos totales (N<sub>mod</sub>) se sustituye en la expresión anterior:
+                           </p>
+                           <br>
+                            <div class="eq-c" style="font-size:20px;">
+                                <i>N<sub>mod</sub></i> = 
+                                <div class="fraction">
+                                    <span class="fup"><i>11185</span>
+                                    <span class="bar">/</span>
+                                    <span class="fdn"><i>255 * 4,56 * 0,812</i></span>
+                                </div>
+                                    <i> = 11,84</i> 
+                            </div>
+                           <br>
+                       </li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+      </div><!-- /.row -->
+      
+      <div class="row">
+        <div class="col-sm-10 col-md-offset-1" >
+            <h2><b>Referencias:</b></h2>
+            <p><b>[1]</b> B. Gaiddon, H. Kaan and D. Munro, Photovoltaics in the urban environment. London: Earthscan, 2009.<br>
+                <b>[2]</b> "quot;Haceb | Fabricantes y comercializadores de electrodomésticos para el hogar", Haceb.com,2016. [Online]. Available: http://www.haceb.com/. [Accessed: 19- Sep- 2016].<br>
+                <b>[3]</b> R. Moreno, "¿Cómo calcular nuestro consumo eléctrico para después poder dimensionar nuestra instalación de suministro eléctrico mediante energías renovables?", Energias-renovables-y-limpias.blogspot.com.co, 2012. [Online]. Available: http://energias-renovables- y-limpias.blogspot.com.co/2012/08/como-calcular- nuestro-consumo- electrico.html. [Accessed: 19-Sep- 2016].<br>
+                <b>[4]</b> V. Octavio, Estudio de una configuracion de paneles solares. [Place of publication not identified]: Editorial Academica Espan, 2013.<br>
+                <b>[5]</b> S. Wenham, Applied photovoltaics. London: Earthscan, 2007.<br>
+                <b>[6]</b> "Dimensionado o Diseño de Sistemas Solares Fotovoltaicos Autónomos", Cubasolar.cu, 2016.[Online]. Available: http://www.cubasolar.cu/biblioteca/energia/energia15/html/articulo03.htm.[Accessed: 19- Sep- 2016].<br></p>
+        </div>
+      </div>
+    
+    
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p><br>
+        <p>© 2016 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../js/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- highcharts framework -->
+    <script src="../js/highcharts.js"></script>
+    <script>
+        $(function () {
+            $('#grafica2').highcharts({
+                title: {
+                    text: 'Radiación solar promedio mensual',
+                    x: -20
+                },
+                subtitle: {
+                    text: '[KWh/m^2]',
+                    x: -20
+                },
+                xAxis: {
+                    title: {
+                        text: 'Mes',
+                        texsize: 100
+                    },
+                    categories: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+                        'Julio', 'Agosto', 'Septiembre', 'Octtubre', 'Noviembre', 'Diciembre']
+                },
+                yAxis: {
+                    title: {
+                        texsize:10000,
+                        text: 'Radiación solar promedio'
+                        
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                chart: {
+                    type: 'column',
+                    margin: 100,
+                },
+                plotOptions: {
+                    column: {
+                        depth: 25
+                    }
+                },
+                legend:{
+                    verticalAlign:'bottom',
+                    align:'right'
+                    
+                },
+                series: [{
+                        type: 'line',
+                        name: 'Linea de regresión',
+                        data: [['Enero',4.3826], ['Diciembre', 3.869]],
+                        color:'blue',
+                        marker: {
+                            enabled: false
+                    },
+                    states: {
+                            hover: {
+                                lineWidth: 0
+                            }
+                        },
+                        enableMouseTracking: false
+                    }, {
+                        name:'RSP',
+                        type: 'column',
+                        showInLegend:false,
+                        data: [4.25,4.25,4.75,3.75,3.75,4.00,4.75,4.25,4.25,3.75,3.75,3.75],
+                        color: '#99CCFF'
+                }]
+            });
+        });
+    </script>
+    
+  
+
+    <svg style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;" preserveAspectRatio="none" viewBox="0 0 500 500" height="500" width="500" xmlns="http://www.w3.org/2000/svg"><defs><style type="text/css"></style></defs><text style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif" y="25" x="0">500x500</text></svg>
+  </body>
+</html>

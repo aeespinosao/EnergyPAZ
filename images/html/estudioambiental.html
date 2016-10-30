@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Normalize a web page -->
+<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen">
+    <!-- Title and logo -->
+    <link href='../images/logo.png' rel='shortcut icon' type='image/png'>
+    <title>EnergyPAZ s.a.s</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="../css/carousel.css" rel="stylesheet">
+    <style type="text/css">   
+        a:link   
+        {   
+         text-decoration:none;   
+        }   
+        .fraction {
+            display: inline-block;
+            vertical-align: middle; 
+            margin: 0 0.2em 0.4ex;
+            text-align: center;
+        }
+        .fraction > span {
+            display: block;
+            padding-top: 0.15em;
+        }
+        .fraction span.fdn {border-top: thin solid black;}
+        .fraction span.bar {display: none;}
+    </style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html"><i class="fa fa-bolt" style=" color: #FFFF00; margin-right:10px;" aria-hidden="true"></i>EnergyPAZ</a>
+            </div>
+            <div style="height: 1px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html"> <i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
+                <li><a href="about.html"> <i class="fa fa-users" aria-hidden="true"></i> Integrantes</a></li>
+                <li><a href="presentations.html"> <i class="fa fa-television" aria-hidden="true"></i> Poster & presentaciones </a></li>
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list" aria-hidden="true"></i> Formulación <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="marcolegal.html">Estudio legal</a></li>
+                    <li class="active"><a href="estudioambiental.html">Estudio ambiental</a></li>
+                    <li><a href="estudioorganizacional.html">Estudio organizacional</a></li>
+                    <li><a href="estudiotecnico.html">Estudio técnico</a></li>
+                    <li><a href="metodosalt.html">Metodos alternativos</a></li>
+                    <li><a href="estudiomercado.html">Estudio de mercado</a></li>
+                    <li><a href="estructuracostos.html">Estructura de costos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-line-chart" aria-hidden="true"></i> Evaluación financiera <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                    <li><a href="flujofondos.html">Flujo de fondos puro</a></li>
+                    <li><a href="flujofondosf.html">Flujo de fondos financiado</a></li>
+                                        <li><a href="resumen.html">Resumen</a></li>
+
+                  </ul>
+                </li>
+                <li><a href="maqueta.html"> <i class="fa fa-clipboard" aria-hidden="true"></i> Maqueta </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+    
+     <!-- Three columns of text below the carousel -->
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <h1 class="featurette-heading">Estudio ambiental.<!--<span class="text-muted">Checkmate.</span>--></h1><br>
+            <h2><b>Impacto ambiental.</b></h2><br>
+            <p class="lead">Las fuentes de energía renovables contra los combustibles fósiles, constituyen fuentes prácticamente inagotables además de que son poco dañinas para el medio ambiente <b>[1]</b>.</p>
+            <p class="lead">La generación de energía eléctrica a partir de la energía solar al no usar ningún tipo de combustión no produce emisiones de gases contaminantes y es silenciosa, lo que representa una clara ventaja frente a otras fuentes de generación de energía no convencionales. Aunque podría presentarse un efecto de contaminación visual sobre el paisaje, igualmente puede afectar el suelo, la fauna y flora de la zona.</p>
+            <p class="lead">los sistemas fotovoltaicos sólo generan contaminación durante las distintas etapas de fabricación de los componentes del sistema. La energía invertida en el tiempo de producción es siempre recuperable <b>[2]</b>, para un plazo de 2 - 3 años ya se ha recuperado la energía que es significativamente menor a la vida útil del sistema fotovoltaico que es más de 25 años. </p>
+        </div>
+      </div><!-- /.row -->
+      
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <h2><b>Comparación con otros metodos de generación de energía electrica.</b></h2><br>
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th style="text-align:center" class="active">Fuente de energía</th>
+                    <th style="text-align:center" class="active">CO<sub>2</sub></th>
+                    <th style="text-align:center" class="active">NO<sub>x</sub></th>
+                    <th style="text-align:center" class="active">SO<sub>2</sub></th>
+                    <th style="text-align:center" class="active">Particulas sólidas en suspensión</th>
+                    <th style="text-align:center" class="active">CO</th>
+                    <th style="text-align:center" class="active">Hidrocarburos</th>
+                    <th style="text-align:center" class="active">Residuos nucleares</th>
+                    <th style="text-align:center" class="active">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:center">Carbón</td>
+                    <td style="text-align:center">1.058,2</td>
+                    <td style="text-align:center">2,986</td>
+                    <td style="text-align:center">2,971</td>
+                    <td style="text-align:center">1,626</td>
+                    <td style="text-align:center">0,267</td>
+                    <td style="text-align:center">0,102</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center" class="danger">1.066</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Gas natural</td>
+                    <td style="text-align:center">824,0</td>
+                    <td style="text-align:center">0,251</td>
+                    <td style="text-align:center">0,336</td>
+                    <td style="text-align:center">1,176</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center" class="danger">825,8</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Nuclear</td>
+                    <td style="text-align:center">8,6</td>
+                    <td style="text-align:center">0,034</td>
+                    <td style="text-align:center">0,029</td>
+                    <td style="text-align:center">0,003</td>
+                    <td style="text-align:center">0,018</td>
+                    <td style="text-align:center">0,001</td>
+                    <td style="text-align:center">3,641</td>
+                    <td style="text-align:center" class="danger">12,3</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Biomasa</td>
+                    <td style="text-align:center">0,0</td>
+                    <td style="text-align:center">0,614</td>
+                    <td style="text-align:center">0,154</td>
+                    <td style="text-align:center">0,512</td>
+                    <td style="text-align:center">11,361</td>
+                    <td style="text-align:center">0,768</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center" class="danger">13,4</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Geotérmica</td>
+                    <td style="text-align:center">56,8</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center" class="danger">56,8</td>
+                  <tr>
+                    <td style="text-align:center">Eólica</td>
+                    <td style="text-align:center">7,4</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center" class="danger">7,4</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Solar</td>
+                    <td style="text-align:center">3,6</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center" class="success">3,6</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center">Hidráulica</td>
+                    <td style="text-align:center">6,6</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center">-</td>
+                    <td style="text-align:center" class="danger">6,6</td>
+                  </tr>
+                </tbody>
+              </table>
+              <em>Tabla 1: Tomada de [3]</em>
+            </div>
+        </div>
+      </div><!-- /.row -->
+      
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+         <p class="lead">Respecto de otras tecnologías de generación, los sistemas de energía solar son los menos contaminantes, como se observa en la tabla 1, donde las emisiones contaminantes producido es 3.6 toneladas, la menor de todas las comparadas.</p>
+          </div>
+        </div>
+      
+      <!-- Three columns of text below the carousel -->
+      <div class="row featurette">
+        <div class="col-sm-10 col-md-offset-1" >
+            <h2><b>Matriz causa efecto.</b></h2><br>
+            <div class="col-sm-10 col-md-offset-1" >
+            <div class="table-responsive">
+              <table class="table table-condensed">
+                  <tr>
+                    <th colspan="2" scope="col" style="text-align:center" class="active">Acciones del proyecto</th>
+                    <th rowspan="2" scope="row" style="text-align:center" class="active">Instalación</th>
+                    <th rowspan="2" scope="row" style="text-align:center" class="active">Operación</th>
+                    <th rowspan="2" scope="row" style="text-align:center" class="active">Abandono</th>
+                  </tr>
+                  <tr>
+                    <th colspan="2" scope="col" style="text-align:center" class="active">Factores ambientales</th>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" scope="row" style="text-align:center; vertical-align:middle;" class="active">Aire</th>
+                    <th style="text-align:center" class="active">Calidad</th>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center" class="active">Ruido</th>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" scope="row" style="text-align:center; vertical-align:middle;" class="active">Agua</th>
+                    <th style="text-align:center" class="active">Calidad</th>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center" class="active">Cantidad</th>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" scope="row" style="text-align:center; vertical-align:middle;" class="active">Suelo</th>
+                    <th style="text-align:center" class="active">Erosión</th>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center" class="active">Productividad</th>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Inaceptable</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center" class="active">Flora</th>
+                    <th style="text-align:center" class="active">Abundancia</th>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center" class="active">Fauna</th>
+                    <th style="text-align:center" class="active">Abundancia</th>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center" class="active">Paisaje</th>
+                    <th style="text-align:center" class="active">Visual</th>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Inaceptable</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2" scope="row" style="text-align:center; vertical-align:middle;" class="active">Población</th>
+                    <th style="text-align:center" class="active">Relocalización</th>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center" class="active">Costumbres</th>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                    <td style="text-align:center">Aceptable</td>
+                  </tr>
+                  <tr>
+                    <th style="text-align:center" class="active">Otros</th>
+                    <th style="text-align:center" class="active">Ecosistemas</th>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Inaceptable</td>
+                    <td style="text-align:center">Inaceptable</td>
+                  </tr>
+              </table>
+              <em>Tabla 2: Adaptada de [4]</em>
+            </div>
+        </div>
+        </div>
+      </div><!-- /.row -->
+    
+    <div class="row">
+        <div class="col-sm-10 col-md-offset-1" >
+            <h2><b>Referencias:</b></h2>
+            <p><b>[1]</b> D. Muñoz Anticona, Aplicación de la Energía Solar para electrificación rural en zonas marginales del país, Lima: Universidad Nacional de Ingeniería, 2005.<br>
+                <b>[2]</b> C. del Canizo Nadal, La energía solar fotovoltaica: presente y futuro, Madrid: Universidad Politécnica de Madrid, 2003.<br>
+                <b>[3]</b> Energías renovables para todos. [En línea]. Available: https://www.iberdrola.com/webibd/gc/prod/es/doc/cli_renovables_todos.pdf. [Último acceso: 16 septiembre 2016].<br>
+                <b>[4]</b> Fundamentos de evaluación del Impacto Ambiental, G. Espinoza, 2001. [En línea]. Available: http://www.bvsde.paho.org/bvsacd/cd51/fundamentos.pdf [Último acceso: 16 septiembre 2016].<br></p>
+        </div>
+      </div>
+    
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p><br>
+        <p>© 2016 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../js/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+
+    <svg style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;" preserveAspectRatio="none" viewBox="0 0 500 500" height="500" width="500" xmlns="http://www.w3.org/2000/svg"><defs><style type="text/css"></style></defs><text style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif" y="25" x="0">500x500</text></svg>
+  </body>
+</html>
