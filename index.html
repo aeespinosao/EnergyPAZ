@@ -46,8 +46,8 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top" style="border-bottom:0px;">
+          <div class="container" style="padding-left:0px;">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -55,9 +55,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href=""><i class="fa fa-bolt" style=" color: #FFFF00; margin-right:10px;" aria-hidden="true"></i>EnergyPAZ</a>
+              <div>
+                  <a class="navbar-brand" href="" style="margin:0px; padding:0px;"><img src="images/logo1.png" width="200px" height="100%" style="" alt="Logo energypaz"></a>
+                  
+              </div>
+              
+              
             </div>
             <div style="height: 1px;" aria-expanded="false" id="navbar" class="navbar-collapse collapse">
+             
               <ul class="nav navbar-nav">
                 <li class="active"><a href=""> <i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
                 <li><a href="html/about.html"> <i class="fa fa-users" aria-hidden="true"></i> Integrantes</a></li>
@@ -100,27 +106,28 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li class="active" data-target="#myCarousel" data-slide-to="1"></li>
+        <li class="active"data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li class="" data-target="#myCarousel" data-slide-to="1"></li>
         <li class="" data-target="#myCarousel" data-slide-to="2"></li>
         <li class="" data-target="#myCarousel" data-slide-to="3"></li>
         <li class="" data-target="#myCarousel" data-slide-to="4"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="second-slide" src="images/carousel2.jpg" alt="Second slide">
+          <img class="second-slide" src="images/logo1.png" alt="Second slide">
         </div>
         <div class="item">
           <img class="third-slide" src="images/carousel3.jpg" alt="Third slide">
         </div>
         <div class="item">
-          <img class="fourth-slide" src="images/alt4.jpg" alt="Third slide">
+          <img class="first-slide" src="images/panel.jpg" alt="First slide" style="width: 100%;">
         </div>
         <div class="item">
-          <img class="first-slide" src="images/alt1.jpg" alt="First slide" style="width: 100%;">
+          <img class="fourth-slide" src="images/carousel2.jpg" alt="Third slide">
         </div>
+        
         <div class="item">
-          <img class="fiveth-slide" src="images/alt5.jpg" alt="Third slide">
+          <img class="first-slide" src="images/carousel6.jpg" alt="Four slide" style="width: 100%;">
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
