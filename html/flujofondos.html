@@ -99,13 +99,10 @@
                  <ul class="dropdown-menu">
                     <li class="active"><a href="flujofondos.html">Flujo de fondos puro</a></li>
                     <li><a href="flujofondosf.html">Flujo de fondos financiado</a></li>
-                    <!--<li><a href="html/estudioorganizacional.html">Estudio organizacional</a></li>
-                    <li><a href="html/estudiotecnico.html">Estudio técnico</a></li>
-                    <li><a href="html/metodosalt.html">Metodos alternativos</a></li>
-                    <li><a href="html/estudiomercado.html">Estudio de mercado</a></li>
-                    <li><a href="html/estructuracostos.html">Estructura de costos</a></li>-->
+                    <li><a href="resumen.html">Resumen</a></li>
                   </ul>
                 </li>
+                <li><a href="maqueta.html"> <i class="fa fa-clipboard" aria-hidden="true"></i> Maqueta </a></li>
               </ul>
               
             </div>
@@ -135,7 +132,7 @@
                 <thead>
                   <tr class="active">
                     <th style="text-align:center">Impuesto renta</th>
-                    <th style="text-align:center">Valor K<sub>wh</sub> año 1</th>
+                    <th style="text-align:center">Valor KWh año 1</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -438,21 +435,21 @@
      <hr class="featurette-divider">
      
      <div class="row featurette">
-           <h2><b>Calculo del valor presente neto</b></h2><br>
+           <h2><b>Cálculo del valor presente neto</b></h2><br>
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/vpn.jpg" alt="">
-      <div class="eq-c" style="font-size:20px;"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>VPN </i> = $ - 1.225.018.141,44
+      <div class="eq-c" style="font-size:20px;"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>VPN </i> = $ - 1.230.919.973
     </div>
       <br><br>
            <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FNE<sub>i</sub> : Fujo de fondos neto en el preiodo i<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FNE<sub>i</sub> : Flujo de fondos neto en el periodo i<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P : Inversión <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i : Interés<br></p>
         
             <hr class="featurette-divider">
 
-      <h2><b>Calculo de la tasa interna de retorno</b></h2><br>
+      <h2><b>Cálculo de la tasa interna de retorno</b></h2><br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/tir.svg" alt="">
-      <div class="eq-c" style="font-size:20px;"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>TIR </i> = -11,40%
+      <div class="eq-c" style="font-size:20px;"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>TIR </i> = -12%
     </div>
       <br><br>
         <p class="lead"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siendo: <br>
@@ -510,7 +507,8 @@
                     yAxis: {
                         title: {
                                 text: '$'
-                            }
+                            },
+            
 					},
 					tooltip: {
 						formatter: function() {
@@ -523,7 +521,7 @@
 					},
 					series: [{
 						name: '$',
-						data: [-2407806036,43128489,59222239,75175676,1340608676]
+						data: [-1230919973,43128489,59222239,75175676,1340608676]
 					}]
 				});
 				

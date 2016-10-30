@@ -92,8 +92,11 @@
                  <ul class="dropdown-menu">
                     <li><a href="flujofondos.html">Flujo de fondos puro</a></li>
                     <li><a href="flujofondosf.html">Flujo de fondos financiado</a></li>
+                                         <li><a href="resumen.html">Resumen</a></li>
+
                   </ul>
                 </li>
+                <li><a href="maqueta.html"> <i class="fa fa-clipboard" aria-hidden="true"></i> Maqueta </a></li>
               </ul>
             </div>
           </div>
@@ -129,7 +132,7 @@
                     <th colspan="8" scope="col" style="text-align:center" class="active">Casa propotipo</th>
                   </tr>
                   <tr>
-                    <th style="text-align:center">Electrodomestico</th>
+                    <th style="text-align:center">Electrodoméstico</th>
                     <th style="text-align:center">Marca</th>
                     <th style="text-align:center">Referencia</th>
                     <th style="text-align:center">Cantidad</th>
@@ -238,7 +241,7 @@
 
                   </tr>
                   <tr>
-                    <td style="text-align:center">Electrodomesticos menores</td>
+                    <td style="text-align:center">Electrodomésticos menores</td>
                     <td style="text-align:center"></td>
                     <td style="text-align:center"></td>
                     <td style="text-align:center"></td>
@@ -440,7 +443,7 @@
                         <ul>
                             <li><p class="lead">La potencia que pueden desarrollar los módulos no es exactamente la misma, y por lo tanto tampoco lo son su intensidad ni su tensión de máxima potencia. De este modo, cuando se constituye un sistema generador formado por varios paneles o módulos conectados en serie, este hecho induce a que se produzca una pérdida de potencia debido a que el valor de la intensidad de corriente de paso será igual a la de menor valor de los paneles colocados en serie.</p>
                             <p class="lead">Para minimizar este efecto, los módulos se clasifican por su intensidad, que suele venir indicado con una letra grabada mediante un adhesivo adherido al marco de un panel, de manera que se puede escoger los paneles similares a la hora de armar las series durante la instalación.</p>
-                            <p class="lead">En esta ocasión, y según se puede consultar en el catálogo de propiedades técnicas suministrado por el fabricante de los módulos fotovoltaicos seleccionados (ver apartado 2.1 de este tutorial), la tolerancia de potencia (% P<sub>máx</sub>) del módulo seleccionado es de 0%+3%, por lo que las posibles pérdidas por dispersión de potencia se pueden estimar en un 3%.</p></li>
+                            <p class="lead">En esta ocasión, y según se puede consultar en el catálogo de propiedades técnicas suministrado por el fabricante de los módulos fotovoltaicos seleccionados, la tolerancia de potencia (% P<sub>máx</sub>) del módulo seleccionado es de 0%+3%, por lo que las posibles pérdidas por dispersión de potencia se pueden estimar en un 3%.</p></li>
                         </ul>
                         </li>
                         <li><p class="lead">Pérdidas por incremento de temperatura de las células fotovoltaicas.</p>
@@ -467,14 +470,14 @@
                             </div>
                             <p class="lead">
                                 Siendo:<br>
-                                T<sub>amb</sub>:  la temperatura ambiente media mensual del lugar donde se instalarán los módulos fotovoltaicos. la temperatura media para el mes de diciembre es de11,1ºC.<br>
-                                T<sub>onc</sub>:  es la temperatura de operación nominal de la célula. Este dato también es suministrado por el fabricante del módulo solar, siendo el valor en este caso Tonc = 45ºC.<br>
-                                E:  es la radiación media en un día soleado del mes en cuestión, que en este caso es de valor 590 W/m2.<br>
+                                T<sub>amb</sub>:  La temperatura ambiente media mensual del lugar donde se instalarán los módulos fotovoltaicos. La temperatura media para el mes de diciembre es de 11,1ºC.<br>
+                                T<sub>onc</sub>:  Es la temperatura de operación nominal de la célula. Este dato también es suministrado por el fabricante del módulo solar, siendo el valor en este caso Tonc = 45ºC.<br>
+                                E:  Es la radiación media en un día soleado del mes en cuestión, que en este caso es de valor 590 W/m2.<br>
                                 Sustituyendo los valores en la expresión anterior, resulta que la temperatura media mensual (T<sub>c</sub>) a la que trabajan las placas fotovoltaicas, resulta ser de: <br><br>
                                 Tc = 11,1 + 18,4 = 29,5 ºC<br><br>                          
                                 Por lo que el factor que considera las pérdidas por incremento de la temperatura del panel (P<sub>T</sub>) resulta ser:<br><br>
                                 P<sub>T</sub> = K<sub>T</sub> * (T<sub>c</sub> - 25 ºC)= 0,0044 * (29,5 - 25)= 0,019<br><br>
-                                Resultando unas pérdidas por incremento de temperatura de los módulos fotovoltaicos del 1,9%.s
+                                Resultando unas pérdidas por incremento de temperatura de los módulos fotovoltaicos del 1,9%
                             </p></li>
                         </ul>
                         </li>
@@ -582,7 +585,7 @@
         $(function () {
             $('#grafica2').highcharts({
                 title: {
-                    text: 'Radiacion solar promedio mensual',
+                    text: 'Radiación solar promedio mensual',
                     x: -20
                 },
                 subtitle: {
